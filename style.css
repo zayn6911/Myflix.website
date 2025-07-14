@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: #fff;
+}
+
+header {
+  background: #000;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav a {
+  color: #fff;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.banner img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.categories, .movie-grid {
+  padding: 20px;
+}
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.movie-grid img {
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.movie-detail video {
+  width: 100%;
+  max-height: 500px;
+}
